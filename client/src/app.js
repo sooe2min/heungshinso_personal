@@ -167,43 +167,51 @@ class App extends Component {
 
 					<div className="app_main">
 						<Routes>
-							<Route exact path="/">
-								<Main data={this.state}></Main>
-							</Route>
-							<Route path="/recruit">
-								<Recruit
-									users={this.state.users}
-									teams={this.state.teams}
-									currentUserData={this.state.currentUser.userData}
-								/>
-							</Route>
-							<Route path="/apply">
-								<Apply users={this.state.users} />
-							</Route>
-							<Route path="/createTeam">
-								{this.state.currentUser.isLogin ? (
-									<CreateTeam
-										users={this.state.teams}
-										teams={this.state.users}
-										currentUserData={this.state.currentUser.userData}
-										handleChangeTeam={this.handleChangeTeam.bind(this)}
-									/>
-								) : (
-									<Navigate to="/" />
-								)}
-							</Route>
-							<Route path="/profile">
-								{this.state.currentUser.isLogin ? (
-									<Profile
-										changeCurrentUserHandler={this.changeCurrentUserHandler.bind(
-											this
-										)}
+							<Route path="/" element={<Main data={this.state} />} />
+							<Route
+								path="/recruit"
+								element={
+									<Recruit
+										users={this.state.users}
+										teams={this.state.teams}
 										currentUserData={this.state.currentUser.userData}
 									/>
-								) : (
-									<Navigate to="/" />
-								)}
-							</Route>
+								}
+							/>
+							<Route
+								path="/apply"
+								element={<Apply users={this.state.users} />}
+							/>
+							<Route
+								path="/createTeam"
+								element={
+									this.state.currentUser.isLogin ? (
+										<CreateTeam
+											users={this.state.teams}
+											teams={this.state.users}
+											currentUserData={this.state.currentUser.userData}
+											handleChangeTeam={this.handleChangeTeam.bind(this)}
+										/>
+									) : (
+										<Navigate to="/" />
+									)
+								}
+							/>
+							<Route
+								path="/profile"
+								element={
+									this.state.currentUser.isLogin ? (
+										<Profile
+											changeCurrentUserHandler={this.changeCurrentUserHandler.bind(
+												this
+											)}
+											currentUserData={this.state.currentUser.userData}
+										/>
+									) : (
+										<Navigate to="/" />
+									)
+								}
+							/>
 						</Routes>
 						<Footer></Footer>
 					</div>

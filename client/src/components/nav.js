@@ -28,28 +28,28 @@ class Nav extends Component {
 			return (
 				<nav className="nav_container">
 					<div className="nav_main">
-						<NavLink exact to="/" className="nav_main_a">
+						<NavLink to="/" className="nav_main_a">
 							<img alt="" className="nav_logo" src={logo}></img>
 						</NavLink>
 					</div>
 					<div className="nav_page">
 						<NavLink
 							to="/recruit"
-							activeClassName="active"
+							activeclassname="active"
 							className="nav_page_item">
 							모집
 						</NavLink>
 
 						<NavLink
 							to="/apply"
-							activeClassName="active"
+							activeclassname="active"
 							className="nav_page_item">
 							찾기
 						</NavLink>
 
 						<NavLink
 							to="/createTeam"
-							activeClassName="active"
+							activeclassname="active"
 							className="nav_page_item">
 							팀생성
 						</NavLink>
@@ -57,7 +57,7 @@ class Nav extends Component {
 						<NavLink
 							className="nav_page_item"
 							to="/profile"
-							activeClassName="active">
+							activeclassname="active">
 							프로필
 						</NavLink>
 						<div className="nav_page_div">ㅣ</div>
@@ -76,28 +76,28 @@ class Nav extends Component {
 			return (
 				<nav className="nav_container">
 					<div className="nav_main">
-						<NavLink exact to="/" className="nav_main_a">
+						<NavLink to="/" className="nav_main_a">
 							<img alt="" className="nav_logo" src={logo}></img>
 						</NavLink>
 					</div>
 					<div className="nav_page">
 						<NavLink
 							to="/recruit"
-							activeClassName="active"
+							activeclassname="active"
 							className="nav_page_item">
 							모집
 						</NavLink>
 
 						<NavLink
 							to="/apply"
-							activeClassName="active"
+							activeclassname="active"
 							className="nav_page_item">
 							찾기
 						</NavLink>
 
 						<NavLink
 							to="/createTeam"
-							activeClassName="active"
+							activeclassname="active"
 							className="nav_page_item">
 							<div onClick={this.props.signInModalHandler}>팀생성</div>
 						</NavLink>
