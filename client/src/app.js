@@ -10,7 +10,7 @@ import Recruit from './components/recruit'
 import dummyData from './dummy_data/dummy_data'
 import './styles/app.css'
 
-export const serverAddress = process.env.SERVER_HOST
+export const serverAddress = process.env.REACT_APP_SERVER_HOST
 
 class App extends Component {
 	constructor(props) {
