@@ -37,7 +37,7 @@ class CreateTeam extends Component {
 			.then(res => res.json())
 			.then(body => {
 				this.setState({ errorMessage: '' })
-				this.props.history.push('/')
+				window.history.go('/')
 			})
 			.catch(err => {
 				throw err
