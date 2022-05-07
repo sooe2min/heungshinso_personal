@@ -311,7 +311,6 @@ const dummyData = {
 			createdAt: '2020-11-19T12:31:59.364Z',
 			team_region: '부산광역시',
 			team_position: 'Developer',
-			img: 'http://bm.straightline.jp/upload/large/large_dfe1b8111168a8eb7450bb1b4cd5cae9.jpg?',
 			userId: 4
 		},
 		{
@@ -323,8 +322,7 @@ const dummyData = {
 			createdAt: '2020-11-22T12:31:59.364Z',
 			team_region: '부산광역시',
 			team_position: 'Developer',
-			userId: 7,
-			img: 'https://cdn.lynda.com/course/506926/506926-637286199177092773-16x9.jpg'
+			userId: 7
 		},
 		{
 			id: 3,
@@ -335,8 +333,7 @@ const dummyData = {
 			createdAt: '2020-11-25T12:31:59.364Z',
 			team_region: '대전광역시',
 			team_position: 'Developer',
-			userId: 3,
-			img: 'http://bm.straightline.jp/upload/large/large_9728ebf8cf89d23671479575e7053cc4.jpg?13:33:36'
+			userId: 3
 		},
 		{
 			id: 4,
@@ -347,8 +344,7 @@ const dummyData = {
 			createdAt: '2020-11-28T12:31:59.364Z',
 			team_region: '광주광역시',
 			team_position: 'Designer',
-			userId: 8,
-			img: 'http://bm.straightline.jp/upload/large/large_f25c962fe9d0f039f1b65121e1299d80.jpg?11:39:31'
+			userId: 8
 		},
 		{
 			id: 5,
@@ -359,8 +355,7 @@ const dummyData = {
 			createdAt: '2020-11-13T12:31:59.364Z',
 			team_region: '인천광역시',
 			team_position: 'Planner',
-			userId: 1,
-			img: 'http://bm.straightline.jp/upload/large/large_bc6ed7088febe8e126b5a7056f945f4e.jpg?13:43:04'
+			userId: 1
 		},
 		{
 			id: 6,
@@ -371,8 +366,7 @@ const dummyData = {
 			createdAt: '2020-11-13T12:31:59.364Z',
 			team_region: '인천광역시',
 			team_position: 'ETC',
-			userId: 6,
-			img: 'http://bm.straightline.jp/upload/large/large_bc6ed7088febe8e126b5a7056f945f4e.jpg?13:43:04'
+			userId: 6
 		},
 		{
 			id: 7,
@@ -383,8 +377,7 @@ const dummyData = {
 			createdAt: '2020-11-19T12:31:59.364Z',
 			team_region: '부산광역시',
 			team_position: 'Developer',
-			userId: 4,
-			img: 'http://bm.straightline.jp/upload/large/large_98280a94fcb74820cfce4a094ad1104e.jpg'
+			userId: 4
 		},
 		{
 			id: 8,
@@ -395,8 +388,7 @@ const dummyData = {
 			createdAt: '2020-11-22T12:31:59.364Z',
 			team_region: '부산광역시',
 			team_position: '개발자',
-			userId: 7,
-			img: 'http://bm.straightline.jp/upload/large/large_08a0e81573705670ddd81e631a971844.jpg?13:38:53'
+			userId: 7
 		},
 		{
 			id: 9,
@@ -407,8 +399,7 @@ const dummyData = {
 			createdAt: '2020-11-25T12:31:59.364Z',
 			team_region: '대전광역시',
 			team_position: 'Desinger',
-			userId: 3,
-			img: 'http://bm.straightline.jp/upload/large/large_53d51f461e23612bedb9b0d4ab77e11b.jpg?13:41:38'
+			userId: 3
 		},
 		{
 			id: 10,
@@ -419,8 +410,7 @@ const dummyData = {
 			createdAt: '2020-11-28T12:31:59.364Z',
 			team_region: '광주광역시',
 			team_position: 'Desinger',
-			userId: 8,
-			img: 'http://bm.straightline.jp/upload/large/large_e031bf088f216062b5c30ab9a7dc1dcf.jpg?13:37:37'
+			userId: 8
 		},
 		{
 			id: 11,
@@ -431,8 +421,7 @@ const dummyData = {
 			createdAt: '2020-11-13T12:31:59.364Z',
 			team_region: '인천광역시',
 			team_position: 'Developer',
-			userId: 1,
-			img: 'http://bm.straightline.jp/upload/large/large_9fe29994ae5c5353cfc01c6dac1cb48e.jpg?13:28:54'
+			userId: 1
 		},
 		{
 			id: 12,
@@ -443,8 +432,7 @@ const dummyData = {
 			createdAt: '2020-11-13T12:31:59.364Z',
 			team_region: '인천광역시',
 			team_position: 'Developer',
-			userId: 6,
-			img: 'http://bm.straightline.jp/upload/large/large_af79e6ef850a86d61847acfb33ede069.jpg?13:27:08'
+			userId: 6
 		},
 		{
 			id: 13,
@@ -455,8 +443,7 @@ const dummyData = {
 			createdAt: '2020-11-19T12:31:59.364Z',
 			team_region: '서울특별시',
 			team_position: 'Developer',
-			userId: 4,
-			img: 'http://bm.straightline.jp/upload/large/large_1ded918db50bd64e0e6cf2f092e2ff4d.jpg?13:27:41'
+			userId: 4
 		},
 		{
 			id: 14,
@@ -467,8 +454,7 @@ const dummyData = {
 			createdAt: '2020-11-22T12:31:59.364Z',
 			team_region: '부산광역시',
 			team_position: 'Developer',
-			userId: 7,
-			img: 'http://bm.straightline.jp/upload/large/large_8712e760b4dc37bcffc12166bf999bc5.jpg?13:25:15'
+			userId: 7
 		},
 		{
 			id: 15,
@@ -479,8 +465,7 @@ const dummyData = {
 			createdAt: '2020-11-25T12:31:59.364Z',
 			team_region: '대전광역시',
 			team_position: 'Developer',
-			userId: 3,
-			img: 'http://bm.straightline.jp/upload/large/large_315c65600a566aba4803252742247dd6.jpg?13:27:15'
+			userId: 3
 		},
 		{
 			id: 16,
@@ -491,8 +476,7 @@ const dummyData = {
 			createdAt: '2020-11-28T12:31:59.364Z',
 			team_region: '광주광역시',
 			team_position: 'Planner',
-			userId: 8,
-			img: 'http://bm.straightline.jp/upload/large/large_4c0bde286ba09376443977d71c654f7f.jpg?12:52:41'
+			userId: 8
 		},
 		{
 			id: 17,
@@ -503,8 +487,7 @@ const dummyData = {
 			createdAt: '2020-11-13T12:31:59.364Z',
 			team_region: '인천광역시',
 			team_position: 'Developer',
-			userId: 1,
-			img: 'http://bm.straightline.jp/upload/large/large_b58444c64d9d3a222649c7917017c0c8.jpg?'
+			userId: 1
 		},
 		{
 			id: 18,
@@ -515,8 +498,7 @@ const dummyData = {
 			createdAt: '2020-11-13T12:31:59.364Z',
 			team_region: '인천광역시',
 			team_position: 'Desinger',
-			userId: 6,
-			img: ''
+			userId: 6
 		}
 	]
 }
