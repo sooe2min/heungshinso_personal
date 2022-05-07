@@ -87,7 +87,7 @@ class Footer extends Component {
 					</div>
 				</div>
 				<div className="footer-bottom">
-					Copyright &copy; Heungshinso 2020. All rights reserved..
+					Copyright &copy; Heungshinso 2020. All rights reserved.
 				</div>
 			</div>
 		)
