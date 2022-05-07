@@ -8,7 +8,7 @@ import SignHandle from './nav/signhandle'
 class Nav extends Component {
 	handleSignOut = () => {
 		this.props.signInAndOutHandler()
-		this.props.history.push('/')
+		window.history.go('/')
 		localStorage.removeItem('currentUser')
 
 		axios({
