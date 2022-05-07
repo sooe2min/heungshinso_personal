@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Apply from './components/apply'
 import CreateTeam from './components/create_team'
 import Footer from './components/footer'
@@ -166,7 +166,7 @@ class App extends Component {
 					</div>
 
 					<div className="app_main">
-						<Switch>
+						<Routes>
 							<Route exact path="/">
 								<Main data={this.state}></Main>
 							</Route>
@@ -189,7 +189,7 @@ class App extends Component {
 										handleChangeTeam={this.handleChangeTeam.bind(this)}
 									/>
 								) : (
-									<Redirect to="/" />
+									<Navigate to="/" />
 								)}
 							</Route>
 							<Route path="/profile">
@@ -201,10 +201,10 @@ class App extends Component {
 										currentUserData={this.state.currentUser.userData}
 									/>
 								) : (
-									<Redirect to="/" />
+									<Navigate to="/" />
 								)}
 							</Route>
-						</Switch>
+						</Routes>
 						<Footer></Footer>
 					</div>
 				</div>

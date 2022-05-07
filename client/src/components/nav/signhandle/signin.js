@@ -61,11 +61,6 @@ class SignIn extends Component {
 	}
 
 	render() {
-		const redirectURI = encodeURI(
-			`${serverAddress}/users/signin/naverlogin/callback`
-		)
-		const client_id = '228zVx2bad5gY6VoK5Gg'
-		const state = '12345'
 		return (
 			<div>
 				<span
@@ -119,6 +114,7 @@ class SignIn extends Component {
                   href={`https://github.com/login/oauth/authorize?client_id=67284f7fd9e4bc6602f7&redirect_uri=${serverAddress}/users/signin/callback`}
                 > */}
 								<img
+									alt=""
 									className="signin_login_content_img"
 									src={githubImg}></img>
 								{/* </a> */}
@@ -137,6 +133,7 @@ class SignIn extends Component {
                 > */}
 
 								<img
+									alt=""
 									className="signin_login_content_img"
 									src={naverImg}></img>
 								{/* </a> */}
@@ -147,6 +144,7 @@ class SignIn extends Component {
                   href={`${serverAddress}/users/signin/kakaologin`}
                 > */}
 								<img
+									alt=""
 									className="signin_login_content_img"
 									src={kakaoImg}></img>
 								{/* </a> */}

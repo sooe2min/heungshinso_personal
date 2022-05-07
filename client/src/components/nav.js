@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Component } from 'react'
-import { NavLink, withRouter } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { serverAddress } from '../app'
 import logo from '../images/흥신소로고.png'
 import '../styles/nav.css'
@@ -10,12 +10,7 @@ class Nav extends Component {
 		this.props.signInAndOutHandler()
 		this.props.history.push('/')
 		localStorage.removeItem('currentUser')
-		const url = `${serverAddress}/users/signout`
-		// fetch(url, {
-		//   method: 'POST',
-		//   credentials: 'include',
-		//   mode: 'cors',
-		// })
+
 		axios({
 			method: 'post',
 			url: `${serverAddress}/users/signout`
@@ -34,7 +29,7 @@ class Nav extends Component {
 				<nav className="nav_container">
 					<div className="nav_main">
 						<NavLink exact to="/" className="nav_main_a">
-							<img className="nav_logo" src={logo}></img>
+							<img alt="" className="nav_logo" src={logo}></img>
 						</NavLink>
 					</div>
 					<div className="nav_page">
@@ -82,7 +77,7 @@ class Nav extends Component {
 				<nav className="nav_container">
 					<div className="nav_main">
 						<NavLink exact to="/" className="nav_main_a">
-							<img className="nav_logo" src={logo}></img>
+							<img alt="" className="nav_logo" src={logo}></img>
 						</NavLink>
 					</div>
 					<div className="nav_page">
@@ -123,4 +118,4 @@ class Nav extends Component {
 	}
 }
 
-export default withRouter(Nav)
+export default Nav

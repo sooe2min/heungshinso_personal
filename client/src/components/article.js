@@ -5,7 +5,10 @@ const Article = props => (
 		{props.team ? (
 			<>
 				<div className="recruit_card">
-					<img src={props.team.img} className="recruit_card_img"></img>
+					<img
+						alt=""
+						src={props.team.img}
+						className="recruit_card_img"></img>
 					<div className="recruit_card_nav">
 						<div className="recruit_card_title">
 							<div>{props.team.title}</div>
@@ -35,7 +38,10 @@ const Article = props => (
 				<div
 					className="apply_card"
 					onClick={() => props.modalOn(props.user)}>
-					<img src={props.user.url} className="apply_card_img"></img>
+					<img
+						alt=""
+						src={props.user.url}
+						className="apply_card_img"></img>
 					<span className="apply_card_info">
 						<dl>
 							<dt>user</dt>

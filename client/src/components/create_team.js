@@ -1,5 +1,4 @@
 import { Component } from 'react'
-import { withRouter } from 'react-router-dom'
 import { serverAddress } from '../app'
 import '../styles/createteam.css'
 class CreateTeam extends Component {
@@ -134,4 +133,4 @@ class CreateTeam extends Component {
 	}
 }
 
-export default withRouter(CreateTeam)
+export default CreateTeam

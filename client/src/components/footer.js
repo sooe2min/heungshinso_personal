@@ -10,7 +10,7 @@ class Footer extends Component {
 			<div className="footer">
 				<div className="inner-footer">
 					<div className="footer-items">
-						<img src={logoo} />
+						<img alt="logo" src={logoo} />
 						<div className="border"></div>
 						<h3>'사람' 찾아 드립니다.</h3>
 						<h3>
