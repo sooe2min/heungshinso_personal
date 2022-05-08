@@ -1,7 +1,7 @@
 import React from 'react'
 import Filter from '../components/filter'
 import Article from './article'
-import { REACT_APP_SERVER_HOST } from './constants'
+import { REACT_APP_SERVER_HOST } from './constants/index'
 
 class Recruit extends React.Component {
 	constructor(props) {

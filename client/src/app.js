@@ -7,7 +7,7 @@ import Main from './components/main'
 import Nav from './components/nav'
 import Profile from './components/profile'
 import Recruit from './components/recruit'
-import { REACT_APP_SERVER_HOST } from './constants'
+import { REACT_APP_SERVER_HOST } from './constants/index'
 import dummyData from './dummy_data/dummy_data'
 import './styles/app.css'
 

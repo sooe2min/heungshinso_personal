@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import '../styles/createteam.css'
-import { REACT_APP_SERVER_HOST } from './constants'
+import { REACT_APP_SERVER_HOST } from './constants/index'
 
 class CreateTeam extends Component {
 	constructor(props) {

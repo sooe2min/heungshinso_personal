@@ -3,7 +3,7 @@ import { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '../images/흥신소로고.png'
 import '../styles/nav.css'
-import { REACT_APP_SERVER_HOST } from './constants'
+import { REACT_APP_SERVER_HOST } from './constants/index'
 import SignHandle from './nav/signhandle'
 
 class Nav extends Component {
