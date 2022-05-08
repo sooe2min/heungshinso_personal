@@ -1,8 +1,8 @@
 import React from 'react'
 import Article from '../components/article'
 import Filter from '../components/filter'
+import { REACT_APP_SERVER_HOST } from '../constants/index'
 import '../styles/filter.css'
-import { REACT_APP_SERVER_HOST } from './constants/index'
 
 class Apply extends React.Component {
 	constructor(props) {

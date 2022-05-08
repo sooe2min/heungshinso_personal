@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { REACT_APP_SERVER_HOST } from '../../../app'
+import { REACT_APP_SERVER_HOST } from '../../../constants/index'
 class SignUp extends Component {
 	constructor(props) {
 		super(props)

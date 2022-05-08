@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { REACT_APP_SERVER_HOST } from '../../../app'
+import { REACT_APP_SERVER_HOST } from '../../../constants/index'
 import githubImg from '../../../styles/contents/github.webp'
 import kakaoImg from '../../../styles/contents/kakaologin2.png'
 import naverImg from '../../../styles/contents/naverlogin.png'
