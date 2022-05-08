@@ -1,7 +1,8 @@
 import React from 'react'
-import { serverAddress } from '../app'
 import Filter from '../components/filter'
 import Article from './article'
+import { REACT_APP_SERVER_HOST } from './constants'
+
 class Recruit extends React.Component {
 	constructor(props) {
 		super(props)
@@ -111,7 +112,7 @@ class Recruit extends React.Component {
 	}
 
 	filterFetch() {
-		let url = `${serverAddress}/teams/recruit${this.state.query}`
+		let url = `${REACT_APP_SERVER_HOST}/teams/recruit${this.state.query}`
 		fetch(url, {
 			headers: {
 				'Content-Type': 'application/json',

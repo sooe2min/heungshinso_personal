@@ -1,6 +1,7 @@
 import { Component } from 'react'
-import { serverAddress } from '../app'
 import '../styles/createteam.css'
+import { REACT_APP_SERVER_HOST } from './constants'
+
 class CreateTeam extends Component {
 	constructor(props) {
 		super(props)
@@ -24,7 +25,7 @@ class CreateTeam extends Component {
 			userId: this.props.currentUserData.id
 		}
 
-		const url = `${serverAddress}/teams/createteam`
+		const url = `${REACT_APP_SERVER_HOST}/teams/createteam`
 		this.props.handleChangeTeam(body)
 		fetch(url, {
 			method: 'POST',

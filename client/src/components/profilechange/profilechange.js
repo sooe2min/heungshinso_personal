@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { serverAddress } from '../../app'
+import { REACT_APP_SERVER_HOST } from '../../app'
 import '../../styles/profilechange.css'
 class ProfileChange extends Component {
 	constructor(props) {
@@ -107,7 +107,7 @@ class ProfileChange extends Component {
 			email: this.props.currentUserData.email
 		}
 
-		const url = `${serverAddress}/users/profile`
+		const url = `${REACT_APP_SERVER_HOST}/users/profile`
 		fetch(url, {
 			method: 'POST',
 			mode: 'cors',

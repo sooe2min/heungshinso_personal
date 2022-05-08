@@ -1,8 +1,9 @@
 import React from 'react'
-import { serverAddress } from '../app'
 import Article from '../components/article'
 import Filter from '../components/filter'
 import '../styles/filter.css'
+import { REACT_APP_SERVER_HOST } from './constants'
+
 class Apply extends React.Component {
 	constructor(props) {
 		super(props)
@@ -144,7 +145,7 @@ class Apply extends React.Component {
 	}
 
 	filterFetch() {
-		let url = `${serverAddress}/users/apply${this.state.query}`
+		let url = `${REACT_APP_SERVER_HOST}/users/apply${this.state.query}`
 		fetch(url, {
 			headers: {
 				'Content-Type': 'application/json',

@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { serverAddress } from '../../../app'
+import { REACT_APP_SERVER_HOST } from '../../../app'
 class SignUp extends Component {
 	constructor(props) {
 		super(props)
@@ -20,7 +20,7 @@ class SignUp extends Component {
 		) {
 			return
 		}
-		const url = `${serverAddress}/users/signup`
+		const url = `${REACT_APP_SERVER_HOST}/users/signup`
 		fetch(url, {
 			method: 'POST',
 			mode: 'cors',

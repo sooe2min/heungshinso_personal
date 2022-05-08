@@ -1,10 +1,11 @@
 import axios from 'axios'
 import { Component } from 'react'
 import { NavLink } from 'react-router-dom'
-import { serverAddress } from '../app'
 import logo from '../images/흥신소로고.png'
 import '../styles/nav.css'
+import { REACT_APP_SERVER_HOST } from './constants'
 import SignHandle from './nav/signhandle'
+
 class Nav extends Component {
 	handleSignOut = () => {
 		this.props.signInAndOutHandler()
@@ -13,7 +14,7 @@ class Nav extends Component {
 
 		axios({
 			method: 'post',
-			url: `${serverAddress}/users/signout`
+			url: `${REACT_APP_SERVER_HOST}/users/signout`
 		})
 			.then(res => {
 				return res

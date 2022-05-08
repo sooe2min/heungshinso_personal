@@ -7,10 +7,9 @@ import Main from './components/main'
 import Nav from './components/nav'
 import Profile from './components/profile'
 import Recruit from './components/recruit'
+import { REACT_APP_SERVER_HOST } from './constants'
 import dummyData from './dummy_data/dummy_data'
 import './styles/app.css'
-
-export const serverAddress = process.env.REACT_APP_SERVER_HOST
 
 class App extends Component {
 	constructor(props) {
@@ -65,7 +64,7 @@ class App extends Component {
 				}
 			}))
 
-			fetch(serverAddress, {
+			fetch(REACT_APP_SERVER_HOST, {
 				method: 'GET',
 				mode: 'cors',
 				headers: {
@@ -86,7 +85,7 @@ class App extends Component {
 
 		// github login
 		if (window.location.href.indexOf('?githublogin') !== -1) {
-			fetch(`${serverAddress}/users/githublogin`)
+			fetch(`${REACT_APP_SERVER_HOST}/users/githublogin`)
 				.then(res => {
 					return res.json()
 				})
@@ -107,7 +106,7 @@ class App extends Component {
 		// // naver login
 
 		if (window.location.href.indexOf('?naverlogin') !== -1) {
-			fetch(`${serverAddress}/users/naverlogin`)
+			fetch(`${REACT_APP_SERVER_HOST}/users/naverlogin`)
 				.then(res => {
 					return res.json()
 				})
@@ -129,7 +128,7 @@ class App extends Component {
 		// kakao login
 
 		if (window.location.href.indexOf('?kakaologin') !== -1) {
-			fetch(`${serverAddress}/users/kakaologin`)
+			fetch(`${REACT_APP_SERVER_HOST}/users/kakaologin`)
 				.then(res => {
 					return res.json()
 				})

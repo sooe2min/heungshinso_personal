@@ -8,5 +8,5 @@
 
 - 흥신소는 프로젝트를 함께 진행할 동료를 모집하거나 팀을 찾는 커뮤니티 서비스입니다.
 - 홈페이지, 모집 페이지, 찾기 페이지를 만들었으며 필터링 기능과 모달 기능을 구현하였습니다.
-- 서비스 주소: https://heungshinso.netlify.app/
+- 서비스 주소: https://heungshinso-personal.netlify.app
 - 회고: [2주 프로젝트 회고 (MOTIVATION)](https://smss.netlify.app/2020-11-22-MOTIVATION/)

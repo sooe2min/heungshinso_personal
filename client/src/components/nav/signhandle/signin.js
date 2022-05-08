@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { serverAddress } from '../../../app'
+import { REACT_APP_SERVER_HOST } from '../../../app'
 import githubImg from '../../../styles/contents/github.webp'
 import kakaoImg from '../../../styles/contents/kakaologin2.png'
 import naverImg from '../../../styles/contents/naverlogin.png'
@@ -29,7 +29,7 @@ class SignIn extends Component {
 			password: this.state.password
 		}
 
-		const url = `${serverAddress}/users/signin`
+		const url = `${REACT_APP_SERVER_HOST}/users/signin`
 		fetch(url, {
 			method: 'POST',
 			mode: 'cors',
@@ -111,7 +111,7 @@ class SignIn extends Component {
 							<span className="signin_login_content">
 								{/* <a
                   className="signin_login_content_github"
-                  href={`https://github.com/login/oauth/authorize?client_id=67284f7fd9e4bc6602f7&redirect_uri=${serverAddress}/users/signin/callback`}
+                  href={`https://github.com/login/oauth/authorize?client_id=67284f7fd9e4bc6602f7&redirect_uri=${REACT_APP_SERVER_HOST}/users/signin/callback`}
                 > */}
 								<img
 									alt=""
@@ -141,7 +141,7 @@ class SignIn extends Component {
 							<span className="signin_login_content">
 								{/* <a
                   className="signin_login_content_kakao"
-                  href={`${serverAddress}/users/signin/kakaologin`}
+                  href={`${REACT_APP_SERVER_HOST}/users/signin/kakaologin`}
                 > */}
 								<img
 									alt=""
