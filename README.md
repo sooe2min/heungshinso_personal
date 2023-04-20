@@ -11,5 +11,6 @@
 
 - 홈페이지, 모집 페이지, 찾기 페이지를 만들었습니다.
 - 필터링 기능과 모달 기능을 구현하였습니다.
+- 프론트엔드 Netlify 배포 / 백엔드 Heroku 배
 - 서비스 주소: https://heungshinso-personal.netlify.app
 - 회고: [2주 프로젝트 회고 (MOTIVATION)](https://smss.netlify.app/2020-11-22-MOTIVATION/)
